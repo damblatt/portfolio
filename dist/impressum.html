@@ -5,29 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/src/nav.css" />
-    <link rel="stylesheet" href="/src/impressum.css" />
+    <link rel="stylesheet" href="/dist/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div id="nav-bar">
-      <div id="nav-bar-container">
-        <a href="index.html" id="logo">Blatt</a>
-        <ul id="nav-ul">
-          <li>
-            <a href="index.html" class="nav-font">About me</a>
-          </li>
-          <li>
-            <a href="meineProjekte.html" class="nav-font">Meine Projekte</a>
-          </li>
-          <li>
-            <a aria-current="impressum.html" class="nav-font">Impressum</a>
-          </li>
-        </ul>
+    <div class="w-screen bg-dark-turquoise-3 h-3"></div>
+     <section id="hero" class="h-screen bg-gradient-to-b from-turquoise to-light-turquoise">
+      <!-- flex container -->
+      <div class="container flex flex-col-reverse">
+          <!-- nav -->
+          <div class="flex flex-col mb-32"> <!-- bg-white -->
+            <a href="index.html" class="pl-3 p-3 text-4xl font-bold text-left text-black hover:bg-dark-turquoise">About me</a>
+            <a href="meineProjekte.html" class="pl-3 p-3 text-4xl font-bold text-left text-black hover:bg-dark-turquoise">Meine Projekte</a>
+            <a href="impressum.html" class="pl-3 p-3 font-bold text-4xl text-left text-black bg-light-turquoise">Impressum</a>
+          </div>
       </div>
-    </div>
+    </section>
 
-    <div id="impressum-title">Impressum!</div>
-    <div></div>
+    <div id="about-me-title">About me!</div>
+    <div id="about-me-container"></div>
   </body>
 </html>
