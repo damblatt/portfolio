@@ -4,10 +4,13 @@ module.exports = {
   theme: {
     colors: {
       'turquoise': '#2DCFC5',
-      'light-turquoise': '#C0F0ED',
-      'dark-turquoise': '#28BAB1',
-      'dark-turquoise-2': '#24A79F',
-      'dark-turquoise-3': '#20948D',
+      'nav-selected': '#C0F0ED',
+      'nav-hover': '#28BAB1',
+      'topline1': '#28BAB1',
+      'topline2': '#24A79F',
+      'topline3': '#20948D',
+      'top-gradient': '#2DCFC5',
+      'bottom-gradient': '#C0F0ED',
       'white': '#ffffff',
       'black': '#191919',
     },
