@@ -5,27 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/src/nav.css" />
-    <link rel="stylesheet" href="/src/aboutMe.css" />
+    <link rel="stylesheet" href="/dist/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    <div id="nav-bar">
-      <div id="nav-bar-container">
-        <a href="index.html" id="logo">Blatt</a>
-        <ul id="nav-ul">
-          <li>
-            <a aria-current="index.html" class="nav-font">About me</a>
-          </li>
-          <li>
-            <a href="meineProjekte.html" class="nav-font">Meine Projekte</a>
-          </li>
-          <li>
-            <a href="impressum.html" class="nav-font">Impressum</a>
-          </li>
-        </ul>
+  <body class="h-screen">
+    <!-- navbar -->
+    <nav class="relative container mx-auto p-8 bg-white">
+      <div class="flex items-center justify-between">
+          <!-- logo -->
+          <div class="pt-2">
+            <a href="index.html" id="logo" class="font-rocksalt text-4xl">Blatt</a>
+          </div>
+          <!-- menu items -->
+          <div class="hidden md:flex space-x-6 ">
+              <!-- space-x = space between the menu items -->
+              <a aria-current="index.html" class="font-sharetechmono hover:text-turquoise text-2xl underline">About me</a>
+              <a href="meineProjekte.html" class="font-sharetechmono hover:text-turquoise text-2xl">Meine Projekte</a>
+              <a href="impressum.html" class="font-sharetechmono hover:text-turquoise text-2xl">Impressum</a>
+          </div>
       </div>
-    </div>
+    </nav>
+
+     <!-- hero section -->
+     <section id="hero" class="h-screen bg-gradient-to-b from-turquoise to-light-turquoise">
+      <div class="w-screen bg-light-turquoise h-3"></div>
+      <!-- flex container -->
+      <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto space-y-0 md:space-y-0">
+          <!-- left item -->
+          <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+              <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">Bring everyone together to build better products</h1>
+              <p class="max-w-sm text-center text-gray-800 md:text-left">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+              <div class="flex justify-center md:justify-start">
+                  <a href="#" class="p-3 px-6 pt-2 text-white bg-[#ff0000] rounded-full baseline hover:bg-[#dd0000]">Get started</a>
+              </div>
+          </div>
+          <!-- image -->
+          <div class="md:w-1/2">
+              <img src="../src/img/illustration-intro.svg" alt="illustration intro">
+          </div>
+      </div>
+  </section>
 
     <div id="about-me-title">About me!</div>
     <div id="about-me-container"></div>
