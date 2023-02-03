@@ -755,11 +755,6 @@ video {
   background-color: rgb(192 240 237 / var(--tw-bg-opacity));
 }
 
-.bg-background {
-  --tw-bg-opacity: 1;
-  background-color: rgb(122 225 218 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(25 25 25 / var(--tw-bg-opacity));
@@ -767,6 +762,36 @@ video {
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.from-top-gradient {
+  --tw-gradient-from: #2DCFC5;
+  --tw-gradient-to: rgb(45 207 197 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-complement {
+  --tw-gradient-from: #CF2D37;
+  --tw-gradient-to: rgb(207 45 55 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-complement {
+  --tw-gradient-to: rgb(207 45 55 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #CF2D37, var(--tw-gradient-to);
+}
+
+.via-bottom-gradient {
+  --tw-gradient-to: rgb(192 240 237 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #C0F0ED, var(--tw-gradient-to);
+}
+
+.to-bottom-gradient {
+  --tw-gradient-to: #C0F0ED;
+}
+
+.to-top-gradient {
+  --tw-gradient-to: #2DCFC5;
 }
 
 .p-3 {
@@ -919,7 +944,7 @@ video {
 
 .hover\:bg-nav-hover:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(60 211 201 / var(--tw-bg-opacity));
+  background-color: rgb(40 186 177 / var(--tw-bg-opacity));
 }
 
 .hover\:text-turquoise:hover {

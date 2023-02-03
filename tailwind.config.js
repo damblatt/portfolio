@@ -5,11 +5,13 @@ module.exports = {
     colors: {
       'turquoise': '#2DCFC5',
       'nav-selected': '#C0F0ED',
-      'nav-hover': '#3CD3C9',
+      'nav-hover': '#28BAB1',
       'topline': '#2F2F2F',
-      'background': '#7AE1DA',
+      'top-gradient': '#2DCFC5',
+      'bottom-gradient': '#C0F0ED',
       'white': '#ffffff',
       'black': '#191919',
+      'complement': '#CF2D37'
     },
     extend: {
       fontFamily: {
