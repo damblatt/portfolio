@@ -5,10 +5,9 @@ module.exports = {
     colors: {
       'turquoise': '#2DCFC5',
       'nav-selected': '#C0F0ED',
-      'nav-hover': '#28BAB1',
+      'nav-hover': '#3CD3C9',
       'topline': '#2F2F2F',
-      'top-gradient': '#2DCFC5',
-      'bottom-gradient': '#C0F0ED',
+      'background': '#7AE1DA',
       'white': '#ffffff',
       'black': '#191919',
     },

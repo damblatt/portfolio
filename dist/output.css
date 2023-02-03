@@ -560,16 +560,30 @@ video {
   margin-right: auto;
 }
 
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .mt-72 {
   margin-top: 18rem;
 }
 
-.-mt-14 {
-  margin-top: -3.5rem;
+.mt-24 {
+  margin-top: 6rem;
 }
 
-.inline-block {
-  display: inline-block;
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.-mt-14 {
+  margin-top: -3.5rem;
 }
 
 .flex {
@@ -593,50 +607,32 @@ video {
   height: 0.75rem;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
-.max-h-max {
-  max-height: -moz-max-content;
-  max-height: max-content;
-}
-
 .w-screen {
   width: 100vw;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
 }
 
 .w-2\/3 {
   width: 66.666667%;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .max-w-none {
   max-width: none;
 }
 
-.max-w-max {
-  max-width: -moz-max-content;
-  max-width: max-content;
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -651,12 +647,12 @@ video {
   align-items: center;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -665,12 +661,26 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.overflow-hidden {
-  overflow: hidden;
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .bg-topline {
@@ -688,18 +698,13 @@ video {
   background-color: rgb(192 240 237 / var(--tw-bg-opacity));
 }
 
+.bg-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(122 225 218 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.from-top-gradient {
-  --tw-gradient-from: #2DCFC5;
-  --tw-gradient-to: rgb(45 207 197 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-bottom-gradient {
-  --tw-gradient-to: #C0F0ED;
 }
 
 .p-3 {
@@ -708,6 +713,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-10 {
@@ -723,6 +732,26 @@ video {
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pl-3 {
@@ -743,14 +772,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .font-rocksalt {
@@ -776,6 +797,21 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -785,13 +821,18 @@ video {
   color: rgb(25 25 25 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
 
 .hover\:bg-nav-hover:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(40 186 177 / var(--tw-bg-opacity));
+  background-color: rgb(60 211 201 / var(--tw-bg-opacity));
 }
 
 .hover\:text-turquoise:hover {
@@ -802,5 +843,19 @@ video {
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
