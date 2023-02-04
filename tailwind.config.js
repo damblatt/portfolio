@@ -9,17 +9,18 @@ module.exports = {
       xl: '1217px'
     },
     colors: {
-      'turquoise': '#2DCFC5',
-      'nav-normal': '#4d4d4d',
-      'black': '#212121',
+      // 'turquoise': '#2DCFC5',
+      // 'nav-normal': '#4d4d4d',
+      // 'nav-hover': '#2E343F',
+      // 'top-gradient': '#2DCFC5',
+      // 'bottom-gradient': '#C0F0ED',
       'light-black': '#2F2F2F',
-      'nav-hover': '#2E343F',
-      'top-gradient': '#2DCFC5',
-      'bottom-gradient': '#C0F0ED',
+      'black': '#212121',
+      'red': '#f33142',
       'white': '#ffffff',
+      'grey-black': '#2E343F',
+      'pink': '#FF2A7F',
       'txt-black': '#191919',
-      'grey': '#dddddd',
-      'red': '#f33142'
     },
     extend: {
       fontFamily: {

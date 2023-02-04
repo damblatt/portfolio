@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
   </head>
 
   <body class="h-max bg-white overflow-x-hidden">
@@ -21,32 +22,23 @@
           <div class="flex items-center justify-start text-white text-xl font-semibold">
             <!-- Menu Items -->
             <div class="flex space-x-6">
-              <a href="index.html" class="py-6 text-red hover:underline">About me</a>
+              <a href="index.html" class="py-6 text-red hover:underline">Über mich</a>
               <a href="meineProjekte.html" class="py-6 hover:underline">Meine Projekte</a>
-              <a href="impressum.html" class="py-6 hover:underline">Impressum</a>
+              <a href="impressum.html" class="py-6 hover:underline">Kontakt</a>
             </div>
-  
-            <!-- Hamburger Icon -->
-            <button
-              id="menu-btn"
-              class="block hamburger md:hidden focus:outline-none text-black">
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
-            </button>
           </div>
         </nav>
 
       <div class="flex h-full text-center justify-center text-9xl font-bold text-black">
-        <div class="mb-20 m-auto">About me</div>
+        <div class="mb-20 m-auto">Über mich</div>
       </div>
 
     </div>
     <article>
       <div class="grid lg:grid-cols-2 px-10 py-16 bg-black h-fit">
-        <div class="text-center text-2xl font-semibold px-20 m-auto text-white">"Mein Name ist Damian Blatt und ich bin leidenschaftlicher Programmierer. <br>Auf dieser Seite findest du alles, was du über mich und meine Arbeit wissen musst."</div>
+        <div class="text-center text-2xl font-semibold px-24 m-auto text-white">"Mein Name ist Damian Blatt und ich bin leidenschaftlicher Programmierer. <br>Auf dieser Seite findest du alles, was du über mich und meine Arbeit wissen musst."</div>
         <div class="flex">
-          <img src="/img/myPicture.png" class="w-2/3 m-auto flex justify-center pt-10 lg:pt-0" alt="Picture of myself" />
+          <img src="/img/myPicture.png" class="w-2/3 m-auto flex justify-center pt-10 lg:pt-0" alt="picture of myself" />
         </div>
       </div>
     </article>
@@ -57,15 +49,15 @@
           Ich bin 16 Jahre alt und mache zurzeit die Informatikmittelschule an der Kanti am Brühl (KSB) in St. Gallen. 
           Wir haben fast immer Projekte am Laufen und lernen viel. Meine aktuelle Lieblingsprogrammiersprache ist C#, da mir das Konzept der objektorientierten Programmierunng sehr gefällt.
         </div>
-        <div>
-          Bei einer Projektarbeit in der dritten Oberstufe habe ich mit C# ein Videospiel programmiert und so meine ersten Erfahrungen im Programmieren gesammelt.
+        <div class="break-words">
+          In der dritten Oberstufe habe ich mit C# ein Videospiel programmiert und so meine ersten Erfahrungen im Programmieren gesammelt.
           <a href="./meineProjekte.html" class="underline">Hier</a> kannst du das Videospiel ausprobieren und mehr darüber erfahren.
         </div>
       </div>
     </article>
     
     <article class="mt-20 py-12 bg-black">
-      <div class="text-4xl font-bold text-white text-center pb-5 px-5 xl:pb-14">Programmier- und Auszeichnungssprachen:</div>
+      <div class="text-3xl font-bold text-white text-center pb-5 px-5 xl:pb-12">Programmier- und Auszeichnungssprachen:</div>
       <ul class="flex-col items-center justify-center text-xl font-bold text-white xl:hidden">
         <li class="flex items-center justify-center">C</li>
         <li class="flex items-center justify-center">C#</li>
@@ -102,35 +94,44 @@
         <li class="flex items-center justify-center">
           <div class="relative">
             <div class="w-40 h-40 rounded-full bg-white"></div>
-            <img src="../img/javascript.png" alt="Javascript logo" class="w-20 h-auto absolute top-6 left-10 z-10">
+            <img src="../img/javascript.png" alt="javascript logo" class="w-20 h-auto absolute top-6 left-10 z-10">
           </div>
         </li>
         <li class="flex items-center justify-center">
           <div class="relative">
             <div class="w-40 h-40 rounded-full bg-white"></div>
-            <img src="../img/python.png" alt="Python logo" class="w-24 h-auto absolute top-8 left-8 z-10">
+            <img src="../img/python.png" alt="python logo" class="w-24 h-auto absolute top-8 left-8 z-10">
           </div>
         </li>
       </ul>
     </article>
 
     <article class="w-5/6 m-auto mt-20">
-      <div class="text-left text-2xl font-bold px-6">
-        <div class="pb-2">
+      <div class="text-left text-xl font-bold px-6">
+        <div class="break-words pb-2">
           In meiner Freizeit unternehme ich gerne etwas mit Freunden; auch wenn es meist in einem Spielabend endet.
         </div>
-        <div>
+        <div class="break-words">
           Ich mag Tiere sehr gerne. Wir haben 4 Katzen zu Hause und ich kümmere mich zudem um meine Geistermantis Gandalf und um meine Kornnatter Büsi.<br>
           Momentan richte ich übrigens ein Terrarium für eine Springspinne oder eine Mexikanische Rotknie-Vogelspinne ein.
         </div>
       </div>
     </article>
 
-    <footer class="w-screen bg-black p-3 pb-10 mt-20 text-white">
-      <ul>
-        <li class="text-xl font-semibold">Impressum</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg#file">"CSS3_logo_and_wordmark"</a> (c) by Rudloff is licensed under <a href="https://creativecommons.org/licenses/by/3.0/deed.en">CC BY 3.0</a></li>
-      </ul>
+    <footer class="bg-black p-8 mt-20 text-white">
+      <div class="grid grid-cols-10 grid-rows-2 h-16">
+        <div class="flex col-span-9 items-center">
+          <a href="impressum.html" class="text-xl font-semibold hover:text-red hover:underline">Kontakt</a>
+        </div>
+        <div class="flex col-span-1 row-span-2 items-center justify-end">
+          <button id="backToTop" >
+            <img src="/img/arrowToTop.png" class="h-14" alt="arrow to top of the page">
+          </button>
+        </div>
+        <div class="flex col-span-9 items-center">
+          <a href="https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg#file" class="hover:underline">"CSS3_logo_and_wordmark"</a>&nbsp;(c) by Rudloff is licensed under&nbsp;<a href="https://creativecommons.org/licenses/by/3.0/deed.en" class="hover:underline">CC BY 3.0</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

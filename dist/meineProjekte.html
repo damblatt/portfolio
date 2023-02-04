@@ -10,42 +10,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
   </head>
 
-  <body class="h-max bg-gradient-to-b from-top-gradient to-bottom-gradient overflow-x-hidden">
-    <div class="w-screen bg-topline h-3"></div>
-    <nav id="nav">
-      <!-- flex container -->
-      <div class="container flex flex-col-reverse max-w-none">
-        <!-- nav -->
-        <div class="flex flex-col">
-          <a href="index.html" class="pl-3 p-3 text-4xl font-bold text-left text-black hover:bg-nav-hover">About me</a>
-          <a href="meineProjekte.html" class="pl-3 p-3 text-4xl font-bold text-left text-black bg-nav-selected">Meine Projekte</a>
-          <a href="impressum.html" class="pl-3 p-3 font-bold text-4xl text-left text-black hover:bg-nav-hover">Impressum</a>
+  <body class="h-max bg-white overflow-x-hidden">
+    <div class="h-screen w-screen flex flex-col">
+      <div class="w-screen bg-light-black h-5"></div>
+        <!-- Navbar -->
+        <nav class="w-screen px-6 bg-black">
+          <!-- Flex container -->
+          <div class="flex items-center justify-start text-white text-xl font-semibold">
+            <!-- Menu Items -->
+            <div class="flex space-x-6">
+              <a href="index.html" class="py-6 hover:underline">Über mich</a>
+              <a href="meineProjekte.html" class="py-6 text-red hover:underline">Meine Projekte</a>
+              <a href="impressum.html" class="py-6 hover:underline">Kontakt</a>
+            </div>
+          </div>
+        </nav>
+
+      <div class="flex h-full text-center justify-center text-9xl font-bold text-black">
+        <div class="mb-20 m-auto">Meine Projekte</div>
+      </div>
+
+    </div>
+    <article>
+      <div class="grid px-10 py-16 bg-black h-fit">
+        <div class="text-center text-2xl font-semibold m-auto pb-5 text-white"><span class="text-pink">Click</span> me!</div>
+        <a href="https://schnabbi.itch.io/dblatt-game" class="flex align-middle justify-center m-auto">
+          <img src="/img/videogameLogo.png" alt="logo of the first and only videogame I programmed">
+        </a>
+      </div>
+    </article>
+    
+    <article class="w-5/6 m-auto mt-20">
+      <div class="text-left text-xl font-bold px-6">
+        <div class="break-words pb-2">
+          Wie du vielleicht bereits gelesen hast, habe ich das erste Mal in der dritten Oberstufe programmiert.
+          Für meine selbstständige Projektarbeit habe ich ein Videospiel auf Unity gemacht. Dort wurde mir klar, wie schwierig Programmieren sein kann, aber auch, wie viel Spass es eigentlich macht.
+        </div>
+        <div class="break-words pb-10">
+          Da ich das Spiel bis auf ein paar Youtube-Videos selbstständig programmierte, hatte ich viele Schwierigkeiten und ich musste viel mehr Zeit aufwenden als ich ursprünglich erwartet hatte.
+        </div>
+        <div class="break-words pb-10">
+          Auch wenn es die Erfahrung auf jeden Fall wert war, werde ich in vorhersehbarer Zukunft wohl keine weiteren Spiele entwickeln, da es viel Zeit und vorallem auch Geduld braucht.
+        </div>
+        <div class="break-words">
+          Willst du das Videospiel gerne ausprobieren? Klicke einfach auf das <span class="text-pink">Bild</span> oben oder direkt <a href="https://schnabbi.itch.io/dblatt-game" class="underline">hier!</a>
         </div>
       </div>
-    </nav>
-
-    <article class="mt-72">
-      <div class="text-8xl font-bold text-center pb-20">Meine Projekte!</div>
-      <div class="grid grid-cols-2 px-10 py-20 bg-nav-selected">
-        <div class="text-center text-2xl font-bold px-20">Mein Name ist Damian Blatt und ich bin leidenschaftlicher Programmierer. <br>Auf dieser Seite findest du alles, was du über mich und meine Arbeit wissen musst.</div>
-        <div class="text-center">#pictureofmyself</div>
+    </article>
+    
+    <article class="mt-20 py-12 bg-black">
+      <div class="text-4xl font-bold text-white text-center px-5 pb-10">Weitere Projekte findest du auf meinem Github-Account</div>
+      <div class="flex flex-row items-center justify-center m-auto">
+        <div class="relative items-center justify-center">
+          <div class="w-36 h-36 rounded-full bg-white"></div>
+          <a href="https://github.com/damblatt"><img src="../img/github.png" alt="C logo" class="w-24 h-auto absolute top-6 left-6 z-10"></a>
+        </div>
       </div>
     </article>
 
-     <!-- <nav class="relative container mx-auto p-8 bg-white">
-      <div class="flex items-center justify-between">
-          <div class="pt-2">
-            <a href="index.html" id="logo" class="font-rocksalt text-4xl">Blatt</a>
-          </div>
-          <div class="hidden md:flex space-x-6 ">
-              <a aria-current="index.html" class="font-sharetechmono hover:text-turquoise text-2xl underline">About me</a>
-              <a href="meineProjekte.html" class="font-sharetechmono hover:text-turquoise text-2xl">Meine Projekte</a>
-              <a href="impressum.html" class="font-sharetechmono hover:text-turquoise text-2xl">Impressum</a>
-          </div>
+    <footer class="bg-black p-8 mt-20 text-white">
+      <div class="grid grid-cols-10 grid-rows-2 h-16">
+        <div class="flex col-span-9 items-center">
+          <a href="impressum.html" class="text-xl font-semibold hover:text-red hover:underline">Kontakt</a>
+        </div>
+        <div class="flex col-span-1 row-span-2 items-center justify-end">
+          <button id="backToTop" >
+            <img src="/img/arrowToTop.png" class="h-14" alt="arrow to top of the page">
+          </button>
+        </div>
+        <div class="flex col-span-9 items-center">
+          <a href="https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg#file" class="hover:underline">"CSS3_logo_and_wordmark"</a>&nbsp;(c) by Rudloff is licensed under&nbsp;<a href="https://creativecommons.org/licenses/by/3.0/deed.en" class="hover:underline">CC BY 3.0</a>
+        </div>
       </div>
-    </nav> -->
-    
+    </footer>
   </body>
 </html>
