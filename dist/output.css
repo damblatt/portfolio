@@ -517,9 +517,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 480px) {
   .container {
-    max-width: 640px;
+    max-width: 480px;
   }
 }
 
@@ -529,21 +529,15 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 920px) {
   .container {
-    max-width: 1024px;
+    max-width: 920px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1217px) {
   .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+    max-width: 1217px;
   }
 }
 
@@ -561,6 +555,26 @@ video {
 
 .right-6 {
   right: 1.5rem;
+}
+
+.top-7 {
+  top: 1.75rem;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
+.left-10 {
+  left: 2.5rem;
+}
+
+.top-8 {
+  top: 2rem;
 }
 
 .z-10 {
@@ -651,8 +665,17 @@ video {
   height: 100%;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-40 {
   height: 10rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-screen {
@@ -843,9 +866,9 @@ video {
   padding-bottom: 4rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .px-5 {
@@ -885,6 +908,18 @@ video {
 
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .text-left {
@@ -994,7 +1029,7 @@ video {
   outline-offset: 2px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 480px) {
   .sm\:w-auto {
     width: auto;
   }
@@ -1025,5 +1060,33 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
     margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+@media (min-width: 920px) {
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:pt-4 {
+    padding-top: 1rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 1217px) {
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:pb-14 {
+    padding-bottom: 3.5rem;
   }
 }

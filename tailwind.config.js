@@ -2,6 +2,12 @@
 module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '920px',
+      xl: '1217px'
+    },
     colors: {
       'turquoise': '#2DCFC5',
       'nav-normal': '#4d4d4d',
