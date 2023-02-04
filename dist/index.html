@@ -13,30 +13,57 @@
   </head>
 
   <body class="h-max bg-white overflow-x-hidden">
-    <div class="w-screen bg-topline h-3"></div>
-    <nav id="nav">
-      <!-- flex container -->
-      <div class="container flex flex-col-reverse max-w-none">
-        <!-- nav -->
-        <div class="flex flex-col text-2xl font-bold text-left text-white">
-          <a href="index.html" class="pl-3 p-3 bg-nav-selected">About me</a>
-          <a href="meineProjekte.html" class="pl-3 p-3 bg-nav-normal hover:bg-nav-hover">Meine Projekte</a>
-          <a href="impressum.html" class="pl-3 p-3 bg-nav-normal hover:bg-nav-hover">Impressum</a>
-        </div>
-      </div>
-    </nav>
+    <div class="h-screen flex flex-col">
+      <div class="w-screen bg-light-black h-5"></div>
+        <!-- Navbar -->
+        <nav class="container mx-auto px-6 bg-black">
+          <!-- Flex container -->
+          <div class="flex items-center justify-start text-white text-xl font-semibold">
+            <!-- Menu Items -->
+            <div class="hidden space-x-6 md:flex">
+              <a href="index.html" class="py-6 text-red hover:underline">About me</a>
+              <a href="meineProjekte.html" class="py-6 hover:underline">Meine Projekte</a>
+              <a href="impressum.html" class="py-6 hover:underline">Impressum</a>
+            </div>
+  
+            <!-- Hamburger Icon -->
+            <button
+              id="menu-btn"
+              class="block hamburger md:hidden focus:outline-none text-black">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
     
-    <div class="text-8xl font-bold text-center mt-72 pb-20">About me!</div>
+          <!-- Mobile Menu -->
+          <div class="md:hidden">
+            <div
+              id="menu"
+              class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+            >
+              <a href="#">About me</a>
+              <a href="#">Meine Projekte</a>
+              <a href="#">Impressum</a>
+            </div>
+          </div>
+        </nav>
+
+      <div class="flex h-full text-center justify-center text-9xl font-bold text-black">
+        <div class="mb-20 m-auto">About me</div>
+      </div>
+
+    </div>
     <article>
-      <div class="grid grid-cols-2 px-10 py-20 bg-nav-selected">
-        <div class="text-center text-2xl font-bold px-20 m-auto">Mein Name ist Damian Blatt und ich bin leidenschaftlicher Programmierer. <br>Auf dieser Seite findest du alles, was du über mich und meine Arbeit wissen musst.</div>
+      <div class="grid grid-cols-2 px-10 py-16 bg-black">
+        <div class="text-center text-2xl font-semibold px-20 m-auto text-white">"Mein Name ist Damian Blatt und ich bin leidenschaftlicher Programmierer. <br>Auf dieser Seite findest du alles, was du über mich und meine Arbeit wissen musst."</div>
         <div class="">
           <img src="/img/myPicture.png" class="w-2/3 m-auto" alt="Picture of myself" />
         </div>
       </div>
     </article>
     
-    <article class="w-5/6 m-auto pt-20 pb-10">
+    <article class="w-5/6 m-auto mt-20">
       <div class="text-left text-2xl font-bold px-6">
         <div class="break-words pb-2">
           Ich bin 16 Jahre alt und mache zurzeit die Informatikmittelschule an der Kanti am Brühl (KSB) in St. Gallen. 
@@ -49,10 +76,8 @@
       </div>
     </article>
     
-    <hr class="w-5/6 mx-auto rounded h-1 border-2 bg-black border-black">
-    
-    <article class="py-10">
-      <div class="text-4xl font-bold text-center pb-14">Programmier- und Auszeichnungssprachen:</div>
+    <article class="mt-20 py-10 bg-black">
+      <div class="text-4xl font-bold text-white text-center pb-14">Programmier- und Auszeichnungssprachen:</div>
       <ul class="flex flex-row gap-12 items-center justify-center m-auto">
         <li class="flex items-center justify-center">
           <div class="w-40 h-40 rounded-full bg-white"></div>
@@ -81,9 +106,7 @@
       </ul>
     </article>
 
-    <hr class="w-5/6 mx-auto rounded h-1 border-2 bg-black border-black">
-
-    <article class="w-5/6 m-auto pt-10 pb-10">
+    <article class="w-5/6 m-auto mt-20">
       <div class="text-left text-2xl font-bold px-6">
         <div class="pb-2">
           In meiner Freizeit unternehme ich gerne etwas mit Freunden; auch wenn es meist in einem Spielabend endet.
@@ -95,13 +118,11 @@
       </div>
     </article>
 
-    <footer class="w-screen bg-topline p-3 mt-20 text-grey">
+    <footer class="w-screen bg-black p-3 pb-10 mt-20 text-white">
       <ul>
         <li class="text-xl font-semibold">Impressum</li>
         <li><a href="https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg#file">"CSS3_logo_and_wordmark"</a> (c) by Rudloff is licensed under <a href="https://creativecommons.org/licenses/by/3.0/deed.en">CC BY 3.0</a></li>
       </ul>
-      <div class="w-screen text-center justify-center font-bold text-2xl text-white absolute">^</div>
-      <div class="w-screen text-center justify-center font-bold text-3xl bg-topline text-turquoise">^</div>
     </footer>
   </body>
 </html>
