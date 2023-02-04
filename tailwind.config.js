@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     colors: {
       'turquoise': '#2DCFC5',
-      'nav-selected': '#C0F0ED',
-      'nav-hover': '#28BAB1',
+      'nav-normal': '#4d4d4d',
+      'nav-selected': '#212121',
+      'nav-hover': '#2E343F',
       'topline': '#2F2F2F',
       'top-gradient': '#2DCFC5',
       'bottom-gradient': '#C0F0ED',
