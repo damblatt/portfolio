@@ -11,12 +11,14 @@ module.exports = {
       'bottom-gradient': '#C0F0ED',
       'white': '#ffffff',
       'black': '#191919',
+      'grey': '#dddddd',
       'complement': '#CF2D37'
     },
     extend: {
       fontFamily: {
         rocksalt: "'Rock Salt', cursive",
         sharetechmono: "'Share Tech Mono', monospace",
+        poppins: "'Poppins', sans-serif",
       }
     },
   },
