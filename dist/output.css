@@ -518,34 +518,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 920px) {
-  .container {
-    max-width: 920px;
-  }
-}
-
-@media (min-width: 1217px) {
-  .container {
-    max-width: 1217px;
-  }
-}
-
 .absolute {
   position: absolute;
 }
