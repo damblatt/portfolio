@@ -534,16 +534,20 @@ video {
   left: 1.5rem;
 }
 
-.left-10 {
-  left: 2.5rem;
-}
-
 .top-7 {
   top: 1.75rem;
 }
 
 .left-8 {
   left: 2rem;
+}
+
+.left-10 {
+  left: 2.5rem;
+}
+
+.top-8 {
+  top: 2rem;
 }
 
 .z-10 {
@@ -572,6 +576,10 @@ video {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mt-12 {
@@ -622,6 +630,10 @@ video {
 
 .h-auto {
   height: auto;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .h-40 {
@@ -761,6 +773,11 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .px-12 {
